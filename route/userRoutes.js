@@ -16,7 +16,7 @@ route.post("/create", async (req, res) => {
 });
 
 // GET: Retrieve all users
-route.get("/fetch", async (_, res) => {
+route.get("/fetch", async (req, res) => {
     try {
         const users = await User.find();
         res.status(200).json(users);

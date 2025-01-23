@@ -30,7 +30,7 @@ mongoose.connect(MONGO_URL)
     .catch((error) => console.log("MongoDB Connection Error: ", error));
 
 // Routes
-app.use("/api/user", route);
+app.use("/", route);
 
 // Error Handling Middleware
 app.use((err, req, res, next) => {

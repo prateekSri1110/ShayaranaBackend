@@ -20,7 +20,7 @@ app.use(cors({
 app.use(bodyParser.json());
 
 // MongoDB Atlas Connection
-mongoose.connect(MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGO_URL)
     .then(() => {
         console.log("Connected to MongoDB Atlas");
         app.listen(PORT, () => {

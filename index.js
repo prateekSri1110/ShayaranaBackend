@@ -13,8 +13,8 @@ const MONGO_URL = process.env.MONGO_URL;
 
 // Middleware
 app.use(cors({
-    origin: "https://shayarana.netlify.app/",
-    methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
+    origin: "https://shayarana.netlify.app",
+    methods: ['GET','POST'],
     credentials: true,
 }));
 app.use(bodyParser.json());
